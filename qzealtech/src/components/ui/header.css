@@ -1,0 +1,23 @@
+.menu_container{
+display: flex;
+justify-content: space-between;
+width: 85% !important;
+
+}
+.header_button{
+    padding: 20px 30px !important;
+    margin-top: -8px !important;
+}
+.header_list li{
+margin-top: 5px !important;
+
+}
+.sub_menu{
+   background-color: var(--foreground);
+   padding: 10px 5px !important;
+}
+.header_list li :hover{
+    /* background-color: var(--foreground); */
+    /* color: white; */
+    border: 0px !important;
+}
