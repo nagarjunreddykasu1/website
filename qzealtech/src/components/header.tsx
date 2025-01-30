@@ -3,11 +3,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react"
 import { useState } from "react";
+import { useRouter } from "next/navigation"
 import '../components/ui/header.css'
 
 
 export default function Header() {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false)
+  const router = useRouter()
   return (
     <header className="bg-blue-600 shadow-sm">
       <nav className="menu_container container mx-auto px-4  py-2 flex justify-center bg-transparent rounded-lg">
@@ -82,12 +84,9 @@ export default function Header() {
             )}
           </li>
           <li>
-            <Link
-              href="/contact"
-              className="block text-white font-bold hover:text-black hover:bg-white"
-            >
+          <button onClick={() => router.push("/contact")} className="block text-white font-bold hover:text-black hover:bg-white">
               Contact Us
-            </Link>
+            </button>
           </li>
           <li>
             <Button className=" header_button text-white font-bold bg-black hover:text-black hover:bg-white rounded">
