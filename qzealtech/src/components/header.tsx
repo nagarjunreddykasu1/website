@@ -37,12 +37,9 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link
-              href="/new-batches"
-              className="block text-white font-bold hover:text-black hover:bg-white"
-            >
+            <button onClick={() => router.push("/new-batches")} className="block text-white font-bold hover:text-black hover:bg-white">
               New Batches
-            </Link>
+            </button>
           </li>
           <li
             className="relative"
